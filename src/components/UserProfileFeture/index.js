@@ -1,27 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
 import { FaUserCircle } from "react-icons/fa";
-import { auth, db } from "../../firebase";
+import { auth } from "../../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { signOut } from "firebase/auth";
 import ColorSwitcher from "../ColorSwitcher";
-import {
-  collection,
-  deleteDoc,
-  doc,
-  getDoc,
-  query,
-  where,
-} from "firebase/firestore";
 
 const UserProfile = () => {
   const [user, loading] = useAuthState(auth);
-  console.log(user);
   const navigate = useNavigate();
 
-  useEffect(() => {
+  useEffect(() => { 
     if (user) {
       navigate("/dashboard");
     }
@@ -52,7 +43,6 @@ const UserProfile = () => {
     Object.entries(colors).forEach(([variable, color]) => {
       document.documentElement.style.setProperty(variable, color);
     });
-
     setColorSet(colors);
   };
 

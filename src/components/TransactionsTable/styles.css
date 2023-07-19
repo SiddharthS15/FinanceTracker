@@ -2,14 +2,15 @@
     color: black !important;
 }
 
-.table-container {
+.table-box {
     width: 95vw;
     margin-block: 1rem;
+    box-shadow: var(--shadow-color);
     padding: 1rem;
     border-radius: .5rem;
 }
 
-.table-container h2 {
+.table-box h2 {
     text-align: center;
     margin-bottom: 1rem;
     opacity: .8;
@@ -94,7 +95,7 @@ button {
 
 /* styles.css (or any other CSS file where you define your styles) */
 
-.table-container {
+.table-box {
     width: 100%;
     overflow-x: auto; /* Add horizontal scrollbar if the table overflows on small screens */
   }

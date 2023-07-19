@@ -133,7 +133,7 @@ const Dashboard = () => {
       <div className="chart container">
         {transactions.length !== 0 ? (
           <div className="line-chart">
-            <ChartComponent transactions={transactions} className="chart-js"/>
+            <ChartComponent transactions={transactions} />
           </div>
         ) : (
           <div className="no-transaction">

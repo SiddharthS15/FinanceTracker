@@ -132,7 +132,7 @@ const TransactionsTable = ({
   };
 
   return (
-    <div className="table-container container">
+    <div className="table-box container">
       <h2>My Transactions</h2>
       <div className="search-and-filter container">
         <input
