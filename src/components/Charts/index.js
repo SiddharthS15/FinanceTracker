@@ -28,21 +28,14 @@ const ChartComponent = ({ transactions }) => {
   };
 
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "400px",
-        borderRadius: "5px",
-      }}
-    >
+    <div className="line-chart">
       <ReactApexChart
         options={chartData.options}
         series={chartData.series}
         type="line"
         height={350}
-        className="chart"
       />
-     </div>
+    </div>
   );
 };
 

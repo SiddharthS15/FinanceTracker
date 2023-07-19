@@ -22,10 +22,10 @@ function App() {
         pauseOnHover
         theme="light"
       />
-      <Router>
+      <Router basename="/Financely">
         <Header />
         <Routes>
-          <Route path="/" element={<Signup />} />
+          <Route path="/Financely" element={<Signup />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </Router>

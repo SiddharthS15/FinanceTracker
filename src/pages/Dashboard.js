@@ -132,7 +132,9 @@ const Dashboard = () => {
       />
       <div className="chart container">
         {transactions.length !== 0 ? (
-          <ChartComponent transactions={transactions} className="chartjs" />
+          <div className="line-chart">
+            <ChartComponent transactions={transactions} className="chart-js"/>
+          </div>
         ) : (
           <div className="no-transaction">
             <h2>No Transactions Avalaible</h2>

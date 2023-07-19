@@ -45,7 +45,6 @@ input {
 
 /* char styling  */
 .chart {
-  width: 95vw;
   margin-block: 2rem;
   box-shadow: var(--shadow-color);
   border-radius: .5rem;
@@ -71,3 +70,13 @@ input {
   align-items: center;
   flex-direction: column;
 }
+
+.line-chart {
+  width: 100%;
+  box-shadow: var(--shadow-color);
+  border-radius: .5rem;
+}
+
+.chart-js {
+  width: 95vw;
+} 
