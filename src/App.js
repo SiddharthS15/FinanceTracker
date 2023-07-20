@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <ToastContainer
         position="top-right"
-        autoClose={5000}
+        autoClose={3000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
@@ -22,7 +22,7 @@ function App() {
         pauseOnHover
         theme="light"
       />
-      <Router basename="{process.env.PUBLIC_URL}">
+      <Router>
         <Header />
         <Routes>
           <Route path="/" element={<Signup />} />

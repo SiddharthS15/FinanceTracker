@@ -60,6 +60,7 @@ const Dashboard = () => {
       // adding new transaction after that previous transactions
       setTransactions([...transactions, transaction]);
       calculateBalance();
+      fetchTransactions();
     } catch (err) {
       if (!many) toast.error("Couldn't add transaction");
     }
@@ -78,7 +79,6 @@ const Dashboard = () => {
     }
   };
 
-  console.log(transactions);
   useEffect(() => {
     // get all the docs from collections
     fetchTransactions();

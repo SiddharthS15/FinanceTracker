@@ -42,6 +42,7 @@ const SignupSignin = () => {
           const user = userCredential.user;
           toast.success("Sign in successfully");
           setLoading(false);
+          setLoginForm(true);
           setName("");
           setEmail("");
           setPassword("");

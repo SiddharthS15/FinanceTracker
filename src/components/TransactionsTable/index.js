@@ -115,14 +115,16 @@ const TransactionsTable = ({
     setShowEditModal(true);
   };
 
-  const handleEditSave = (editedTransaction) => {
-    updateTransactionOnFirebase(user.uid, editedTransaction); // Call the function to update the transaction in Firebase
+  const handleEditSave = async(editedTransaction) => {
+    // Call the function to update the transaction in Firebase
+    await updateTransactionOnFirebase(user.uid, editedTransaction);
     setShowEditModal(false);
     fetchTransactions(); // Fetch the updated data from Firebase
   };
 
-  const handleDeleteSave = (editedTransaction) => {
-    deleteTransactionOnFirebase(user.uid, editedTransaction); // Call the function to update the transaction in Firebase
+  const handleDeleteSave = async(editedTransaction) => {
+    // Call the function to update the transaction in Firebase
+    await deleteTransactionOnFirebase(user.uid, editedTransaction);
     setShowEditModal(false);
     fetchTransactions(); // Fetch the updated data from Firebase
   };
@@ -186,17 +188,18 @@ const TransactionsTable = ({
         <Table
           dataSource={sortedTransactions}
           columns={columns}
+          className="table"
           onRow={(record) => ({
             onClick: () => handleEdit(record), // Handle row click event
           })}
         />
         {showEditModal && selectedTransaction && (
-        <EditEditDeleteModal
-          transaction={selectedTransaction}
-          onSave={handleEditSave}
-          onDelete={handleDeleteSave}
-          onCancel={handleEditCancel}
-        />
+          <EditEditDeleteModal
+            transaction={selectedTransaction}
+            onSave={handleEditSave}
+            onDelete={handleDeleteSave}
+            onCancel={handleEditCancel}
+          />
         )}
       </div>
     </div>

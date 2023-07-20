@@ -87,6 +87,10 @@ button {
     gap: 1rem;
 }
 
+.table{
+    cursor: pointer;
+}
+
 @media (max-width: 750px) {
     .ix-button {
         width: 100%;
