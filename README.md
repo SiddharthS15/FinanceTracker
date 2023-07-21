@@ -34,7 +34,7 @@ https://github.com/Ajay-Chaudhari01001/Financely/assets/55138445/a792125e-7ddb-4
 ## Setup and Installation
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/Ajay-Chaudhari01001/Financely.git]
+   git clone https://github.com/Ajay-Chaudhari01001/Financely.git
    cd react-financial-tracker-app
 
 1. Install dependencies::
