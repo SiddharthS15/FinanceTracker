@@ -76,19 +76,19 @@ https://github.com/Ajay-Chaudhari01001/Financely/assets/55138445/a792125e-7ddb-4
 
 ## Usage
 1) Authentication:
- - Users can sign up or log in using their email and password through the Firebase authentication system.
+ - Users can sign up or log in using their email and password and google account through the Firebase authentication system.
  - Once logged in, users will be redirected to the main dashboard.
 
 2) Adding Transactions:
- - On the dashboard, users can click the "Add Transaction" button to open a form for adding new income or expense records.
+ - On the dashboard, users can click the Add Income and Add Expense button to open a form for adding new income or expense records.
  - Users can enter the transaction amount, category, description, and select whether it's income or expense.
  - Click the "Add" button to save the transaction to the Firebase Firestore database.
 
 3) Editing and Deleting Transactions:
- - Users can edit a transaction by clicking the "Edit" button next to the specific transaction on the dashboard.
+ - Users can edit a transaction by clicking to the specific transaction on the table.
  - The app will open a modal with the transaction details, allowing users to make changes.
- - Click the "Update" button to save the edited transaction.
- - To delete a transaction, click the "Delete" button next to the transaction on the dashboard, and confirm the deletion.
+ - Click the "Save" button to save the edited transaction.
+ - And same steps for delete a transaction 
 
 4) Viewing Financial Data:
  - The app provides a table that displays all transactions with relevant details (date, category, amount, etc.).
