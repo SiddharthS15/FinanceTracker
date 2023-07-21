@@ -101,7 +101,7 @@ https://github.com/Ajay-Chaudhari01001/Financely/assets/55138445/a792125e-7ddb-4
 
 6) Import and Export Data:
    1. **Importing Data:**
-      - Prepare a CSV file with the following format: `date,category,amount,type,description`.
+      - Prepare a CSV file with the following format: `name, amout, type, date`.
       - Log in to the app and navigate to the dashboard.
       - Click the "Import Data" button on the dashboard.
       - Upload the CSV file from your local machine.
