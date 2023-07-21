@@ -8,6 +8,7 @@ import { updateTransactionOnFirebase } from "../../hooks/updateTransaction";
 import { deleteTransactionOnFirebase } from "../../hooks/deleteTransactionOnFirebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../firebase";
+import { AiOutlineSearch } from "react-icons/ai";
 
 const TransactionsTable = ({
   transactions,
@@ -115,14 +116,14 @@ const TransactionsTable = ({
     setShowEditModal(true);
   };
 
-  const handleEditSave = async(editedTransaction) => {
+  const handleEditSave = async (editedTransaction) => {
     // Call the function to update the transaction in Firebase
     await updateTransactionOnFirebase(user.uid, editedTransaction);
     setShowEditModal(false);
     fetchTransactions(); // Fetch the updated data from Firebase
   };
 
-  const handleDeleteSave = async(editedTransaction) => {
+  const handleDeleteSave = async (editedTransaction) => {
     // Call the function to update the transaction in Firebase
     await deleteTransactionOnFirebase(user.uid, editedTransaction);
     setShowEditModal(false);
@@ -137,6 +138,7 @@ const TransactionsTable = ({
     <div className="table-box container">
       <h2>My Transactions</h2>
       <div className="search-and-filter container">
+        <AiOutlineSearch className="search-icon" />
         <input
           className="search-bar"
           type="search"

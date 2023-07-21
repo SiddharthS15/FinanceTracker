@@ -91,6 +91,11 @@ button {
     cursor: pointer;
 }
 
+.search-icon{
+    font-size: 1.5rem;
+    opacity: .8;
+}
+
 @media (max-width: 750px) {
     .ix-button {
         width: 100%;
