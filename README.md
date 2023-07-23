@@ -17,7 +17,7 @@ The React Financial Tracker App is designed to help users keep track of their in
 ## Demo
 https://github.com/Ajay-Chaudhari01001/Financely/assets/55138445/a792125e-7ddb-4f0b-a1a4-db28a59b9f92
 
-## Live Link - https://financetracker22.netlify.app/
+#### Live Link - https://financetracker22.netlify.app/
 
 ## Technologies Used
 - react: "18.2.0",
