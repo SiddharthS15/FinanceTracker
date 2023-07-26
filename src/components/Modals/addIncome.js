@@ -64,7 +64,7 @@ const AddIncome = ({ isIncomeModalVisible, handleIncomeCancel, onFinish }) => {
               htmlType="submit"
               className="btn reset-balance-btn"
             >
-              Add Expense
+              Add Income
             </Button>
           </Form.Item>
         </Form>
